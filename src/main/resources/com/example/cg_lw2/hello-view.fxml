@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<BorderPane prefHeight="673.0" prefWidth="1326.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cg_lw2.HelloController">
+
+    <StackPane layoutX="0.0" layoutY="200.0">
+        <Pane fx:id="canvasD"></Pane>
+        <Pane fx:id="canvasY"></Pane>
+        <Pane fx:id="canvasA"></Pane>
+
+
+        <Pane fx:id="canvas0"></Pane>
+        <Pane fx:id="canvas4"></Pane>
+        <Pane fx:id="canvas0_1"></Pane>
+        <Pane fx:id="canvas9"></Pane>
+
+        <Pane fx:id="canvas2_1"></Pane>
+        <Pane fx:id="canvas0_2"></Pane>
+        <Pane fx:id="canvas0_3"></Pane>
+        <Pane fx:id="canvas3"></Pane>
+        <Pane>
+            <Circle fx:id="pointSpinD" centerX="130.0" centerY="200.0" radius="7.0" />
+            <Circle fx:id="pointSpin0" centerX="830.0" centerY="200.0" radius="7.0" />
+        </Pane>
+    </StackPane>
+
+    <top>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+            <children>
+                <VBox layoutX="20.0" layoutY="20.0" spacing="20.0">
+                    <padding><Insets bottom="20.0" left="20.0" right="20.0" top="20.0" /></padding>
+                    <HBox spacing="10.0">
+                        <Label text="Розмір літерів:" textFill="#da1010"/><Slider prefWidth="200" fx:id="widthSliderD" max="1000" min="0" value="200" />
+                        <Label text="Повороти літерів:" textFill="#da1010"/><Slider prefWidth="200" fx:id="spinPointSliderD" max="360" min="-360" value="0" />
+                    </HBox>
+                    <HBox spacing="10.0">
+                        <Label text="X (вправо-вліво):" textFill="#da1010"/>     <Slider prefWidth="200" fx:id="xPointD" max="1700" min="-400" value="50" />
+                        <Label text="Y (верх-вниз):" textFill="#da1010"/>     <Slider prefWidth="200" fx:id="yPointD" max="1000" min="-200" value="250" />
+                    </HBox>
+                    <HBox spacing="10.0">
+                        <Label text="Колір заливки:" textFill="#da1010"/><ColorPicker fx:id="fillColorD" />
+                        <Label text="Колір лінії:" textFill="#da1010"/><ColorPicker fx:id="lineColorD" />
+                        <Label text="Колір кола:" textFill="#da1010"/><ColorPicker fx:id="spinColorD" />
+                    </HBox>
+                </VBox>
+
+
+                <VBox layoutX="700.0" layoutY="20.0" spacing="20.0">
+                    <padding><Insets bottom="20.0" left="20.0" right="20.0" top="20.0" /></padding>
+                    <HBox spacing="10.0">
+                        <Label text="Розмір чисел:" textFill="#22ff16"/><Slider fx:id="widthSlider0" max="1000" min="0" value="100" prefWidth="200" />
+                        <Label text="Повороти чисел:" textFill="#22ff16"/><Slider fx:id="spinPointSlider0" max="360" min="-360" value="0" prefWidth="200" />
+                    </HBox>
+                    <HBox spacing="10.0">
+                        <Label text="X (вправо-вліво):" textFill="#22ff16"/><Slider fx:id="xPoint0" max="1700" min="-400" value="50" prefWidth="200" />
+                        <Label text="Y (верх-вниз):" textFill="#22ff16"/><Slider fx:id="yPoint0" max="1000" min="-200" value="250" prefWidth="200" />
+                    </HBox>
+                    <HBox spacing="10.0">
+                        <Label text="Колір заливки:" textFill="#22ff16"/><ColorPicker fx:id="fillColorPicker0" />
+                        <Label text="Колір лінії:" textFill="#22ff16"/><ColorPicker fx:id="lineColorPicker0" />
+                        <Label text="Колір кола:" textFill="#22ff16"/><ColorPicker fx:id="spinColorPicker0" />
+                    </HBox>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>
